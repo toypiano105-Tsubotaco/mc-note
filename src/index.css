@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Azuki";
+  src: url("/fonts/azuki.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --app-font-sans: "Azuki", "Nunito", sans-serif;
+
+  --background: hsl(88, 22%, 48%);
+  --text: hsl(35, 30%, 18%);
+  --text-soft: hsl(35, 20%, 35%);
+
+  --primary: hsl(35, 70%, 45%);
+  --primary-text: hsl(40, 60%, 96%);
+  --accent: hsl(12, 55%, 58%);
+
+  --card-0: hsl(12, 52%, 60%);
+  --card-1: hsl(40, 62%, 58%);
+  --card-2: hsl(350, 55%, 73%);
+  --card-3: hsl(175, 38%, 54%);
+  --card-4: hsl(270, 32%, 64%);
+  --card-5: hsl(95, 28%, 58%);
+  --card-6: hsl(25, 48%, 58%);
+
+  --paper: hsl(40, 38%, 92%);
+  --paper-soft: hsl(40, 36%, 96%);
+
+  --shadow-sm:
+    0 2px 0 rgba(0, 0, 0, 0.12),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+
+  --shadow:
+    0 3px 0 rgba(0, 0, 0, 0.15),
+    0 2px 6px rgba(0, 0, 0, 0.1);
+
+  --shadow-md:
+    0 4px 0 rgba(0, 0, 0, 0.18),
+    0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--app-font-sans);
+  font-size: 19px;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}

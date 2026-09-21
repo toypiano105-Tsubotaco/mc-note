@@ -1,0 +1,1211 @@
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: var(--text);
+}
+
+.app {
+  width: 100%;
+  max-width: 520px;
+  min-height: 100vh;
+
+  margin: 0 auto;
+
+  padding:
+    14px
+    12px
+    150px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  margin-bottom: 18px;
+
+  padding:
+    15px
+    18px;
+
+  background:
+    rgba(247, 239, 218, 0.94);
+
+  border:
+    1px solid
+    rgba(72, 56, 35, 0.16);
+
+  border-radius:
+    24% 18% 25% 16% /
+    25% 30% 20% 30%;
+
+  box-shadow:
+    var(--shadow);
+
+  text-align:
+    center;
+
+  overflow:
+    hidden;
+}
+
+.header h1 {
+  margin: 0;
+
+  font-size:
+    36px;
+
+  font-weight:
+    700;
+
+  line-height:
+    1.15;
+
+  text-align:
+    center;
+
+  text-shadow:
+    0.35px 0 currentColor;
+}
+
+.header p {
+  margin:
+    5px 0 0;
+
+  color:
+    var(--text-soft);
+
+  font-size:
+    15px;
+
+  text-align:
+    center;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+  width:
+    100%;
+}
+
+.card,
+.info-card,
+.mc-card,
+.memo-card,
+.title-card,
+.humor-card {
+  width:
+    100%;
+
+  padding:
+    20px
+    18px;
+
+  margin-bottom:
+    17px;
+
+  box-shadow:
+    var(--shadow-md);
+
+  overflow:
+    hidden;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+  background:
+    var(--paper);
+
+  border-radius:
+    30% 20% 35% 18% /
+    22% 30% 20% 32%;
+}
+
+.card + .card {
+  background:
+    var(--card-1);
+}
+
+.card h2 {
+  margin:
+    0 0 14px;
+
+  font-size:
+    24px;
+}
+
+/* =========================
+   INPUT
+========================= */
+
+.song-input {
+  width:
+    100%;
+
+  min-width:
+    0;
+
+  min-height:
+    58px;
+
+  padding:
+    12px 15px;
+
+  border:
+    2px solid
+    rgba(74, 57, 35, 0.16);
+
+  outline:
+    0;
+
+  background:
+    var(--paper-soft);
+
+  color:
+    var(--text);
+
+  border-radius:
+    18% 10% 16% 12% /
+    10% 18% 12% 16%;
+
+  font-size:
+    22px;
+}
+
+.song-input:focus {
+  border-color:
+    var(--primary);
+}
+
+.hint {
+  margin:
+    8px 0 0;
+
+  color:
+    var(--text-soft);
+
+  font-size:
+    15px;
+}
+
+/* =========================
+   SET LIST
+========================= */
+
+.song-order {
+  display:
+    grid;
+
+  gap:
+    11px;
+}
+
+.order-row {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  min-width:
+    0;
+
+  gap:
+    10px;
+
+  font-size:
+    21px;
+
+  overflow-wrap:
+    anywhere;
+
+  word-break:
+    break-word;
+}
+
+.song-number {
+  display:
+    inline-flex;
+
+  justify-content:
+    center;
+
+  flex:
+    0 0 auto;
+
+  width:
+    38px;
+}
+
+/* =========================
+   PRIMARY BUTTON
+========================= */
+
+.primary-button {
+  width:
+    100%;
+
+  min-height:
+    66px;
+
+  padding:
+    13px 20px;
+
+  border:
+    0;
+
+  background:
+    var(--primary);
+
+  color:
+    var(--primary-text);
+
+  border-radius:
+    55% 45% 60% 40% /
+    40% 60% 40% 60%;
+
+  box-shadow:
+    var(--shadow-md);
+
+  font-size:
+    21px;
+
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.primary-button:hover {
+  transform:
+    scale(1.03);
+}
+
+.primary-button:active {
+  transform:
+    scale(0.96);
+}
+
+.primary-button:disabled {
+  opacity:
+    0.35;
+}
+
+/* =========================
+   SONG LIST
+========================= */
+
+.song-list {
+  display:
+    grid;
+
+  gap:
+    11px;
+}
+
+.song-list-item {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  width:
+    100%;
+
+  min-width:
+    0;
+
+  gap:
+    12px;
+
+  padding:
+    16px 18px;
+
+  border:
+    0;
+
+  background:
+    var(--paper);
+
+  color:
+    var(--text);
+
+  text-align:
+    left;
+
+  font-size:
+    20px;
+
+  border-radius:
+    30% 20% 35% 18% /
+    22% 30% 20% 32%;
+
+  box-shadow:
+    var(--shadow);
+
+  overflow:
+    hidden;
+
+  overflow-wrap:
+    anywhere;
+
+  word-break:
+    break-word;
+
+  transition:
+    transform 160ms ease;
+}
+
+.song-list-item:nth-child(7n + 1) {
+  background:
+    var(--card-0);
+}
+
+.song-list-item:nth-child(7n + 2) {
+  background:
+    var(--card-1);
+}
+
+.song-list-item:nth-child(7n + 3) {
+  background:
+    var(--card-2);
+}
+
+.song-list-item:nth-child(7n + 4) {
+  background:
+    var(--card-3);
+}
+
+.song-list-item:nth-child(7n + 5) {
+  background:
+    var(--card-4);
+}
+
+.song-list-item:nth-child(7n + 6) {
+  background:
+    var(--card-5);
+}
+
+.song-list-item:nth-child(7n) {
+  background:
+    var(--card-6);
+}
+
+.song-list-item:hover {
+  transform:
+    scale(1.02);
+}
+
+.song-list-item:active {
+  transform:
+    scale(0.97);
+}
+
+/* =========================
+   SONG TITLE
+   アーシーオレンジ
+========================= */
+
+.title-card {
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  gap:
+    14px;
+
+  background:
+    hsl(28, 58%, 62%);
+
+  text-align:
+    center;
+
+  border-radius:
+    30% 20% 35% 18% /
+    22% 30% 20% 32%;
+
+  overflow:
+    hidden;
+}
+
+.title-card h2 {
+  min-width:
+    0;
+
+  margin:
+    0;
+
+  font-size:
+    31px;
+
+  font-weight:
+    700;
+
+  line-height:
+    1.2;
+
+  text-align:
+    center;
+
+  text-shadow:
+    0.35px 0 currentColor;
+
+  overflow-wrap:
+    anywhere;
+
+  word-break:
+    break-word;
+}
+
+.detail-number {
+  flex:
+    0 0 auto;
+
+  padding:
+    8px 11px;
+
+  background:
+    rgba(255, 249, 235, 0.76);
+
+  border-radius:
+    55% 45% 60% 40% /
+    40% 60% 40% 60%;
+
+  font-size:
+    21px;
+}
+
+/* =========================
+   MC
+   ブルーグリーン
+========================= */
+
+.mc-card {
+  width:
+    100%;
+
+  padding:
+    22px 20px 20px;
+
+  background:
+    var(--card-3);
+
+  border-radius:
+    14% 8% 12% 7% /
+    8% 14% 7% 12%;
+
+  overflow:
+    hidden;
+}
+
+.mc-top-row {
+  display:
+    flex;
+
+  justify-content:
+    space-between;
+
+  align-items:
+    flex-start;
+
+  gap:
+    12px;
+
+  min-width:
+    0;
+}
+
+.mc-label {
+  margin:
+    0;
+
+  font-size:
+    20px;
+}
+
+.mc-counter {
+  margin:
+    3px 0 0;
+
+  color:
+    rgba(63, 48, 31, 0.7);
+
+  font-size:
+    15px;
+}
+
+.mc-type {
+  flex:
+    0 0 auto;
+
+  padding:
+    7px 11px;
+
+  background:
+    rgba(255, 249, 235, 0.72);
+
+  border-radius:
+    55% 45% 60% 40% /
+    40% 60% 40% 60%;
+
+  font-size:
+    14px;
+}
+
+.mc-text {
+  width:
+    100%;
+
+  min-width:
+    0;
+
+  margin:
+    22px 0 24px;
+
+  font-size:
+    27px;
+
+  line-height:
+    1.85;
+
+  overflow-wrap:
+    anywhere;
+
+  word-break:
+    break-word;
+
+  line-break:
+    strict;
+}
+
+.change-button {
+  width:
+    100%;
+
+  min-height:
+    58px;
+
+  padding:
+    11px 15px;
+
+  border:
+    0;
+
+  background:
+    var(--paper-soft);
+
+  color:
+    var(--text);
+
+  border-radius:
+    55% 45% 60% 40% /
+    40% 60% 40% 60%;
+
+  box-shadow:
+    var(--shadow);
+
+  font-size:
+    18px;
+
+  transition:
+    transform 160ms ease;
+}
+
+.change-button:hover {
+  transform:
+    scale(1.03);
+}
+
+.change-button:active {
+  transform:
+    scale(0.96);
+}
+
+/* =========================
+   少しユーモア
+   やわらかいコーラルピンク
+========================= */
+
+.humor-card {
+  background:
+    hsl(12, 58%, 76%);
+
+  border-radius:
+    12% 7% 11% 6% /
+    7% 12% 6% 11%;
+}
+
+.humor-heading {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    9px;
+}
+
+.humor-icon {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  width:
+    38px;
+
+  height:
+    38px;
+
+  flex:
+    0 0 38px;
+
+  background:
+    rgba(255, 249, 235, 0.76);
+
+  border-radius:
+    55% 45% 60% 40% /
+    40% 60% 40% 60%;
+
+  font-family:
+    Arial, sans-serif;
+
+  font-size:
+    21px;
+}
+
+.humor-heading h3 {
+  margin:
+    0;
+
+  font-size:
+    21px;
+
+  font-weight:
+    700;
+
+  color:
+    hsl(12, 38%, 28%);
+}
+
+.humor-text {
+  margin:
+    15px 0 0;
+
+  color:
+    var(--text);
+
+  font-size:
+    21px;
+
+  line-height:
+    1.75;
+
+  overflow-wrap:
+    anywhere;
+
+  word-break:
+    break-word;
+
+  line-break:
+    strict;
+}
+
+/* =========================
+   PREV / NEXT
+========================= */
+
+.song-navigation {
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:
+    11px;
+
+  margin:
+    0 0 17px;
+}
+
+.song-navigation button {
+  min-width:
+    0;
+
+  min-height:
+    52px;
+
+  padding:
+    10px 6px;
+
+  border:
+    0;
+
+  background:
+    var(--paper);
+
+  color:
+    var(--text);
+
+  border-radius:
+    45% 55% 40% 60% /
+    55% 45% 55% 45%;
+
+  box-shadow:
+    var(--shadow);
+
+  font-size:
+    17px;
+
+  overflow-wrap:
+    anywhere;
+
+  word-break:
+    break-word;
+}
+
+.song-navigation button:disabled {
+  opacity:
+    0.35;
+}
+
+/* =========================
+   INFO
+========================= */
+
+.info-card {
+  width:
+    100%;
+
+  padding:
+    22px
+    20px
+    30px;
+
+  background:
+    var(--paper);
+
+  border-radius:
+    8% 6% 7% 5% /
+    5% 7% 5% 6%;
+
+  overflow:
+    hidden;
+}
+
+.section-title {
+  margin:
+    0 0 19px;
+
+  padding-bottom:
+    12px;
+
+  border-bottom:
+    1px dashed
+    rgba(66, 48, 29, 0.28);
+
+  font-size:
+    23px;
+
+  text-align:
+    center;
+}
+
+.info-block {
+  width:
+    100%;
+
+  min-width:
+    0;
+}
+
+.info-block + .info-block {
+  margin-top:
+    19px;
+
+  padding-top:
+    18px;
+
+  border-top:
+    1px dashed
+    rgba(66, 48, 29, 0.28);
+}
+
+.info-block h3 {
+  margin:
+    0 0 6px;
+
+  color:
+    hsl(12, 55%, 48%);
+
+  font-size:
+    18px;
+
+  font-weight:
+    700;
+
+  text-shadow:
+    0.2px 0 currentColor;
+
+  overflow-wrap:
+    anywhere;
+
+  word-break:
+    break-word;
+}
+
+.info-block p {
+  width:
+    100%;
+
+  min-width:
+    0;
+
+  margin:
+    0;
+
+  color:
+    var(--text);
+
+  font-size:
+    20px;
+
+  line-height:
+    1.7;
+
+  overflow-wrap:
+    anywhere;
+
+  word-break:
+    break-word;
+
+  line-break:
+    strict;
+}
+
+/* =========================
+   MEMO
+========================= */
+
+.memo-card {
+  width:
+    100%;
+
+  background:
+    var(--card-2);
+
+  border-radius:
+    18% 10% 16% 9% /
+    10% 18% 9% 16%;
+
+  overflow:
+    hidden;
+}
+
+.memo-card h3 {
+  margin:
+    0 0 9px;
+
+  font-size:
+    20px;
+}
+
+.memo-card textarea {
+  width:
+    100%;
+
+  min-width:
+    0;
+
+  min-height:
+    120px;
+
+  padding:
+    13px;
+
+  resize:
+    vertical;
+
+  border:
+    2px solid
+    rgba(74, 57, 35, 0.13);
+
+  outline:
+    0;
+
+  background:
+    rgba(255, 249, 235, 0.78);
+
+  color:
+    var(--text);
+
+  border-radius:
+    18% 10% 16% 12% /
+    10% 18% 12% 16%;
+
+  font-size:
+    19px;
+
+  overflow-wrap:
+    anywhere;
+
+  word-break:
+    break-word;
+}
+
+/* =========================
+   BOTTOM NAV
+========================= */
+
+.bottom-nav {
+  position:
+    fixed;
+
+  z-index:
+    50;
+
+  left:
+    50%;
+
+  bottom:
+    12px;
+
+  transform:
+    translateX(-50%);
+
+  width:
+    min(
+      calc(100% - 24px),
+      496px
+    );
+
+  padding:
+    7px;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap:
+    6px;
+
+  background:
+    rgba(247, 239, 218, 0.96);
+
+  border:
+    1px solid
+    rgba(68, 51, 31, 0.14);
+
+  border-radius:
+    20% 13% 18% 12% /
+    14% 20% 12% 18%;
+
+  box-shadow:
+    var(--shadow-md);
+
+  backdrop-filter:
+    blur(8px);
+}
+
+.bottom-nav button {
+  min-height:
+    64px;
+
+  padding:
+    5px 3px;
+
+  border:
+    0;
+
+  background:
+    transparent;
+
+  color:
+    var(--text);
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  border-radius:
+    55% 45% 60% 40% /
+    40% 60% 40% 60%;
+
+  transition:
+    transform 160ms ease;
+}
+
+.bottom-nav button span {
+  display:
+    block;
+
+  margin-top:
+    2px;
+
+  font-size:
+    15px;
+}
+
+.bottom-nav button.active {
+  background:
+    var(--primary);
+
+  color:
+    var(--primary-text);
+
+  box-shadow:
+    var(--shadow-sm);
+}
+
+.bottom-nav button:hover {
+  transform:
+    scale(1.04);
+}
+
+.bottom-nav button:active {
+  transform:
+    scale(0.95);
+}
+
+/* =========================
+   iPHONE
+========================= */
+
+@media (max-width: 520px) {
+  .app {
+    padding-left:
+      10px;
+
+    padding-right:
+      10px;
+
+    padding-bottom:
+      150px;
+  }
+
+  .header {
+    padding:
+      12px
+      15px;
+  }
+
+  .header h1 {
+    font-size:
+      32px;
+  }
+
+  .header p {
+    font-size:
+      14px;
+  }
+
+  .card,
+  .memo-card,
+  .title-card,
+  .humor-card {
+    padding:
+      18px
+      15px;
+
+    border-radius:
+      18% 10% 16% 9% /
+      10% 18% 9% 16%;
+  }
+
+  .mc-card {
+    padding:
+      20px
+      16px
+      18px;
+
+    border-radius:
+      10% 6% 9% 5% /
+      6% 10% 5% 9%;
+  }
+
+  .info-card {
+    padding:
+      20px
+      16px
+      30px;
+
+    border-radius:
+      6% 4% 5% 3% /
+      4% 6% 3% 5%;
+  }
+
+  .title-card h2 {
+    font-size:
+      28px;
+  }
+
+  .mc-text {
+    font-size:
+      25px;
+
+    line-height:
+      1.85;
+  }
+
+  .humor-text {
+    font-size:
+      20px;
+
+    line-height:
+      1.75;
+  }
+
+  .info-block p {
+    font-size:
+      19px;
+
+    line-height:
+      1.7;
+  }
+}
+
+/* =========================
+   TOUCH DEVICE
+========================= */
+
+@media (hover: none) {
+  .primary-button:hover,
+  .change-button:hover,
+  .song-list-item:hover,
+  .bottom-nav button:hover {
+    transform:
+      none;
+  }
+}

@@ -1,14 +1,21 @@
 import { useMemo, useState } from "react";
 import "./App.css";
 import songs from "./songs.js";
+import { canReturnToSetList } from "./setListReturn.js";
 
 function App() {
-  const [screen, setScreen] = useState("create");
+  // 起動時だけ共通の曲IDを解決し、最初の描画から詳細を表示する。
+  const [initialSong] = useState(() => {
+    const songId = new URLSearchParams(window.location.search).get("song");
+    return songs.find((song) => song.songId === songId);
+  });
+  const [screen, setScreen] = useState(initialSong ? "detail" : "create");
   const [input, setInput] = useState("3");
-  const [sequence, setSequence] = useState([]);
+  const [sequence, setSequence] = useState(() => initialSong ? [initialSong] : []);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [mcIndex, setMcIndex] = useState(0);
   const [search, setSearch] = useState("");
+  const showSetListReturn = Boolean(initialSong);
 
   const parsedSongs = useMemo(() => {
     const numbers = input
@@ -54,6 +61,22 @@ function App() {
     setMcIndex(0);
     setScreen("detail");
     scrollTop();
+  };
+
+  const returnToSetList = () => {
+    const setListUrl = import.meta.env.VITE_SET_LIST_NOTE_URL
+      || "https://set-list-note.netlify.app/";
+    if (canReturnToSetList(
+      document.referrer,
+      window.history.length,
+      setListUrl,
+    )) {
+      window.history.back();
+      return;
+    }
+
+    // 直接アクセスや参照元不明の場合も、Set List Noteへ移動する。
+    window.location.assign(setListUrl);
   };
 
   const openSong = (song) => {
@@ -233,6 +256,11 @@ function App() {
         {screen === "detail" &&
           currentSong && (
             <section>
+              {showSetListReturn && (
+                <button className="set-list-return" onClick={returnToSetList}>
+                  ← セットリストに戻る
+                </button>
+              )}
               <div className="title-card">
                 <span className="detail-number">
                   {String(

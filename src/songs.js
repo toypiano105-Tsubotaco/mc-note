@@ -13,6 +13,7 @@ const standard = ({
   mcPatterns,
 }) => ({
   id,
+  songId: `song-${String(id).padStart(3, "0")}`,
   title,
   detailsReady: true,
   originalSong: false,
@@ -41,6 +42,7 @@ const originalSong = ({
   mcPatterns,
 }) => ({
   id,
+  songId: `song-${String(id).padStart(3, "0")}`,
   title,
   detailsReady: true,
   originalSong: true,

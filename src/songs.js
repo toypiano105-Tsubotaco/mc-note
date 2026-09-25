@@ -1633,48 +1633,48 @@ export const songs = [
   standard({
     id: 31,
     title: "Time After Time",
-    year: "1947年",
+    year: "1983年（シングル発売は1984年）",
     composer:
-      "Jule Styne（ジューリー・スタイン）",
+      "Cyndi Lauper（シンディ・ローパー）、Rob Hyman（ロブ・ハイマン）",
     lyricist:
-      "Sammy Cahn（サミー・カーン）",
+      "Cyndi Lauper（シンディ・ローパー）、Rob Hyman（ロブ・ハイマン）",
     original:
-      "映画『It Happened in Brooklyn』のために書かれ、Frank Sinatra（フランク・シナトラ）が歌いました。",
+      "Cyndi Lauper（シンディ・ローパー）の1983年のアルバム『She’s So Unusual』に収録。1984年にシングルとして発売。",
     representative:
-      "Frank Sinatra（フランク・シナトラ）、Sarah Vaughan（サラ・ヴォーン）など。",
+      "Cyndi Lauper（シンディ・ローパー）。",
     meaning:
-      "時間が経っても変わらず、大切な人を愛し続ける気持ちを歌った曲。",
+      "離れてしまったり迷ったりしても、いつでも相手を見つけ、そばにいると伝える、やさしく強い愛を歌った曲。",
     episode:
-      "Cyndi Lauper（シンディ・ローパー）の同名曲とは別の、1940年代のジャズ・スタンダード。",
+      "Cyndi Lauper（シンディ・ローパー）とRob Hyman（ロブ・ハイマン）の共作。TOHKOはこの80年代の名曲をジャズアレンジで歌います。",
     trivia:
-      "多くのジャズ歌手がバラードやミディアム・テンポで取り上げています。",
+      "原曲はポップスですが、メロディーの美しさを生かしてさまざまなスタイルでカバーされてきた曲です。",
     mcPoint:
-      "時が経っても変わらない愛。同名の80年代曲とは別曲。",
+      "シンディ・ローパーの名曲をジャズアレンジで。原曲とは少し違う大人っぽい表情を楽しんでもらう。",
     mcPatterns: [
       {
         type: "親しみやすい",
         text:
-          "次は『Time After Time』です。Cyndi Lauperの曲ではなく、1947年に生まれたジャズ・スタンダードの方です。",
+          "次はCyndi Lauper（シンディ・ローパー）の名曲『Time After Time』です。原曲はポップスですが、今日は少し大人っぽいジャズアレンジでお届けします。よく知っている曲の、ちょっと違った表情を楽しんでいただけたらと思います。",
       },
       {
         type: "しっとり",
         text:
-          "時間が過ぎても、何度でも変わらずあなたを想う。そんな穏やかな愛を歌った曲です。",
+          "離れていても、大切な人を想い続ける。そんなやさしく強い気持ちが伝わってくる曲です。Cyndi Lauper（シンディ・ローパー）の『Time After Time』を、今日はジャズの響きに乗せてお届けします。",
       },
       {
         type: "トリビア入り",
         text:
-          "1947年の映画のためにJule Styne（ジューリー・スタイン）とSammy Cahn（サミー・カーン）が書いた曲です。",
+          "『Time After Time』は、Cyndi Lauper（シンディ・ローパー）とRob Hyman（ロブ・ハイマン）が一緒に作った曲です。1980年代を代表する名曲のひとつを、今日はジャズアレンジでお聴きください。",
       },
       {
         type: "短め",
         text:
-          "1947年のジャズ・スタンダード、『Time After Time』です。",
+          "Cyndi Lauper（シンディ・ローパー）の『Time After Time』。今日はちょっと大人っぽく、ジャズアレンジでお届けします。",
       },
       {
         type: "少しユーモア",
         text:
-          "『Time After Time』と言うとCyndi Lauperを思い浮かべる方も多いですが、今日はそちらではありません（笑）。",
+          "Cyndi Lauper（シンディ・ローパー）の『Time After Time』です。80年代の名曲ですが、今日はちょっとおしゃれをして、ジャズになって登場です（笑）。",
       },
     ],
   }),
